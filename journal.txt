@@ -1,0 +1,13 @@
+03/11/2023
+    - Began working on this project
+    - Created home.html, projects.html, contact.html, journal.txt, readme.md
+    - added some code to start off with for the projects
+    - started and finished working on the navbar
+
+03/14/2023
+    - Added previous_work.html
+    - Edited the navbar to indicate the added html field
+    - Created a form for the contact.html file
+    - added some js content to display submitted form on console
+        - Future improvement: add interface to properly submit the form
+    - //

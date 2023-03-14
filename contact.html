@@ -1,0 +1,111 @@
+<!-- 
+Contact form needs to have:
+    First name
+    Last name
+    Email address
+    message subject
+    message
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./onsubmit.js"></script>
+  </head>
+  <body>
+    <!-- Header for the website. Made using bootstrap -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./home.html">Nahom Ketema</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#links"
+          aria-controls="links"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="links">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./previous_work.html">Previous Work</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="https://github.com/nahomketema">
+            <img
+              src="static/github_logo_white.png"
+              alt="github logo"
+              width="40px"
+              height="40px"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Content of the contact page -->
+
+    <form class="contactform bg-light border rounded mx-auto p-2 row g-3 mt-5" action="" onsubmit="log_values()">
+        <h1>Contact Form</h1>
+
+        <div class="col-md-6">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="John" maxlength="25">
+        </div>
+        
+        <div class="col-md-6">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Doe" maxlength="25">
+        </div>
+
+        <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="abc@xyz.com">
+        </div>
+
+        <div class="col-12">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Hello World" maxlength="50">
+        </div>
+
+        <div class="col-12">
+            <label for="subjectbody" class="form-label">Message</label>
+            <input type="text" class="form-control" name="subjectbody" id="subjectbody" placeholder="Lorem ipsum si dolor sit amet, ..." maxlength="300">
+        </div>
+
+        <div
+          class="form-group my-4 d-flex align-items-center justify-content-center"
+        >
+          <input
+            class="btn btn-primary w-25 mx-2"
+            type="submit"
+            value="Submit"
+          />
+          <input
+            class="btn btn-secondary w-25 mx-2"
+            type="reset"
+            value="Reset"
+          />
+        </div>
+      </form>
+  </body>
+</html>
