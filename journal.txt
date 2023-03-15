@@ -10,4 +10,8 @@
     - Created a form for the contact.html file
     - added some js content to display submitted form on console
         - Future improvement: add interface to properly submit the form
-    - //
+
+03/15/2023
+    - Finished projects page
+    - Finished previous work page
+    - Finished home page
